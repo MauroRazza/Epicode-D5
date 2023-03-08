@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 50px;
+    padding: 100px;
+    text-align: center;
+}
+.section {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.container1, .container2, .container3, .container4 {
+    font-size: 0;
+    width: 900px;
+}
+
+.container1 div, .container2 div, .container3 div, .container4 div {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}
+
+/* Position */
+
+.container1 div, .container2 div, .container3 div, .container4 div{
+    position: relative;
+} 
+.container2 div:first-of-type span:first-of-type, .container3 div:first-of-type span:first-of-type{
+    position: absolute;
+    left: -20px;
+    bottom: 40px;
+}
+.container2 div:last-of-type span:last-of-type, .container3 div:last-of-type span:last-of-type{
+    position: absolute;
+    right: -20px;
+    bottom: 40px;
+}
+.container1 div span{
+    position: absolute;
+    top: -25px;
+    right: 40px;
+}
+.container4 div span{
+    position: absolute;
+    bottom: -25px;
+    right: 40px;
+}
+.container1 div:first-of-type span:first-of-type{
+    position: absolute;
+    right: 110px;
+    top: 40px;
+}
+.container4 div:first-of-type span:first-of-type{
+    position: absolute;
+    right: 110px;
+    top: 40px;
+}
+.container1 div:last-of-type span:last-of-type{
+    position: absolute;
+    left: 110px;
+    top: 40px;
+}
+.container4 div:last-of-type span:last-of-type{
+    position: absolute;
+    left: 110px;
+    bottom: 40px;
+}
+ 
+/* Color */
+
+.container1 div:nth-child(odd){
+    background-color: #b09069;
+}
+.container1 div:nth-child(even){
+    background-color: black;
+}
+.container2 div:nth-child(even){
+    background-color: #b09069;
+}
+.container2 div:nth-child(odd){
+    background-color: black;
+}
+.container3 div:nth-child(even){
+    background-color:  black;
+}
+.container3 div:nth-child(odd){
+    background-color: #b09069;
+}
+.container4 div:nth-child(even){
+    background-color: #b09069;
+}
+.container4 div:nth-child(odd){
+    background-color: black;
+}
+
+/* Hover */
+
+.container1 div:hover, .container2 div:hover, .container3 div:hover, .container4 div:hover{
+    background-color: red;
+}
+
+
